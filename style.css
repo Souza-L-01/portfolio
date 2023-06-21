@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+html, body, .widilo-grid-container { 
+  height: 100%; 
+  margin: 0; 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin: 20px;
+}
+
+.widilo-grid-container * { 
+ /*border: 1px solid red;*/
+ position: relative; 
+}
+
+.widilo-grid-container *:after { 
+ /*content:attr(class);*/
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.widilo-grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 2.2fr 0.3fr;
+  grid-template-areas: "widilo-header widilo-header widilo-header widilo-header widilo-header" "widilo-sidebar widilo-content widilo-content widilo-content widilo-content" "widilo-sidebar widilo-footer widilo-footer widilo-footer widilo-footer";
+}
+
+.widilo-header { 
+  grid-area: widilo-header; 
+  background: transparent;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "wd-brand wd-topbar wd-topbar wd-topbar wd-hamburger";
+}
+
+.pd {
+  padding:20px;
+}
+
+.wd-brand { 
+  grid-area: wd-brand; 
+  background: #666;
+}
+
+.wd-topbar { 
+  grid-area: wd-topbar; 
+  background: #666;
+}
+
+.wd-hamburger { 
+  grid-area: wd-hamburger; 
+  background: #666;
+  color: #fff;
+  text-align: right;
+}
+
+.wd-hamburger i { 
+  padding: 15px 10px 15px 25px;
+}
+
+.widilo-sidebar { 
+  grid-area: widilo-sidebar;
+  background: #666;
+}
+
+.widilo-footer { 
+  grid-area: widilo-footer; 
+    background: #666;
+}
+
+.widilo-content { 
+  grid-area: widilo-content; 
+    background: #666;
+}
