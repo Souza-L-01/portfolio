@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
+
 html, body, .widilo-grid-container { 
   height: 100%; 
   margin: 0; 
@@ -58,7 +59,7 @@ body {
 
 .wd-hamburger { 
   grid-area: wd-hamburger; 
-  background: #666;
+  background: #a61919;
   color: #fff;
   text-align: right;
 }
