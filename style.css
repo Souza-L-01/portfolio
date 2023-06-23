@@ -1,6 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
+/* CSS HEX */
+/* --french-rose: #F04B8Aff;
+--true-blue: #3463BDff;
+--french-gray: #D6D2D8ff;
+--chamoisee: #A07763ff;
+--ultra-violet: #6C6A93ff; */
+
 
 html, body, .widilo-grid-container { 
   height: 100%; 
@@ -9,8 +16,8 @@ html, body, .widilo-grid-container {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
-  margin: 20px;
+  color: #D6D2D8ff;
+    margin: 20px;
 }
 
 .widilo-grid-container * { 
@@ -54,7 +61,7 @@ body {
 
 .wd-topbar { 
   grid-area: wd-topbar; 
-  background: #666;
+  background:  #3463BDff;
 }
 
 .wd-hamburger { 
@@ -70,15 +77,14 @@ body {
 
 .widilo-sidebar { 
   grid-area: widilo-sidebar;
-  background: #666;
+  background: #6C6A93ff;
 }
-
 .widilo-footer { 
   grid-area: widilo-footer; 
-    background: #666;
+    background:  #A07763ff;
 }
 
 .widilo-content { 
   grid-area: widilo-content; 
-    background: #666;
+    background: #F04B8Aff;
 }
