@@ -1,9 +1,9 @@
 * {
     box-sizing: border-box;
   }
-  html {
+  #html-mondrian {
     background: white; 
-    background-image: url('http://labs.jensimmons.com/2016/examples/images/transparentbackground.svg');
+    /* background-image: url('http://labs.jensimmons.com/2016/examples/images/transparentbackground.svg'); */
   }
   ul, li {
     margin: 0;

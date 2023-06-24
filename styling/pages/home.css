@@ -9,9 +9,11 @@
 --ultra-violet: #6C6A93ff; */
 
 
-html, body, .widilo-grid-container { 
+#html-home, #body-html, .widilo-grid-container { 
   height: 100%; 
   margin: 0; 
+  /* background: white;  */
+  background-image: url('http://labs.jensimmons.com/2016/examples/images/transparentbackground.svg');
 }
 
 body {
