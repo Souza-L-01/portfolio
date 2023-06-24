@@ -54,9 +54,27 @@ body {
   padding:20px;
 }
 
-.wd-brand { 
+.wd-brand{ 
   grid-area: wd-brand; 
   background: #666;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "ChicagoFLF", sans-serif;
+}
+
+.wd-brand:hover {
+  background: #FFD93D;
+  border: 2px solid #000000;
+  box-shadow: 2px 4px 1px #000000;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.wd-brand:active {
+  background: #dfc769;
+  border: 2px solid #000000;
+  box-shadow: 2px 1px 1px #000000;
+  border-radius: 3px;
 }
 
 .wd-topbar { 
