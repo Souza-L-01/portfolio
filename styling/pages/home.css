@@ -12,6 +12,7 @@
 #html-home, #body-html, .widilo-grid-container { 
   height: 100%; 
   margin: 0; 
+  /* padding: 8px; */
   /* background: white;  */
   background-image: url('http://labs.jensimmons.com/2016/examples/images/transparentbackground.svg');
 }
@@ -20,6 +21,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #D6D2D8ff;
     margin: 20px;
+    padding: 20px;
 }
 
 .widilo-grid-container * { 
@@ -82,6 +84,7 @@ body {
 .wd-topbar { 
   grid-area: wd-topbar; 
   background:  #3463BDff;
+  text-align: center;
 }
 
 .wd-hamburger { 
@@ -100,6 +103,7 @@ body {
   background: #6C6A93ff;
 }
 .widilo-footer { 
+  font-size: 20px;
   grid-area: widilo-footer; 
     background:  #A07763ff;
 }
