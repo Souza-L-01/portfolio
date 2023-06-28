@@ -6,6 +6,7 @@
     font-family: 'Rubik Mono One', sans-serif;
     color: #fffede;
     background-color: #fffede;
+    padding: auto;
   }
   
   .background-rodchenko { 
@@ -13,14 +14,14 @@
     margin-top: 20px;
     width: 920px;
     height: 650px;
-    background:#fffede;
+    /* background:#fffede; */
     display: grid;
     grid-gap: 9px;
     grid-template-columns: 220px 1fr 185px;
     grid-template-rows: 70px 1fr 120px 1fr 70px;
   }
   .background-rodchenko > div {
-    background-color: #bd1f11;
+    background-color: #000000;
   }
   .background-rodchenko > div:nth-child(1) {
     grid-column: 1 / 2;
@@ -38,29 +39,29 @@
   .background-rodchenko > div:nth-child(3) {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    background-color: #4e7352;
+    background-color: #000000;
   }
   .background-rodchenko > div:nth-child(4) {
     grid-column: 1 / 4;
     grid-row: 1 / 6;
-    background-color:rgba(255,0,0,0);
+    background-color:rgba(0, 0, 0, 0);
     z-index: 3;
   }
   .background-rodchenko > div:nth-child(5) {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 35px;
+    /* font-size: 35px; */
     line-height: 38px;
     text-align: center;
-    background-color:rgba(255,0,0,0);
+    background-color:rgba(186, 52, 52, 0);
     z-index: 5;
     padding-top: 6px;
   }
   .background-rodchenko > div:nth-child(6) {
     grid-column: 2 / 4;
     grid-row: 4 / 5;
-    background-color: #4e7352;
+    background-color: #000000;
   }
   .background-rodchenko > div:nth-child(7) {
     grid-column: 2 / 4;
@@ -72,7 +73,7 @@
   #leftcol-rodchenko { 
     width: 920px;
     height: 650px;
-    background-color:rgba(255,0,0,0);
+    /* background-color:rgba(255,0,0,0); */
     display: grid;
     grid-template-columns: 220px 1fr;
     grid-template-rows: 70px 510px 70px;
@@ -105,7 +106,7 @@
   #card-rodchenko {
     width: 5960px;
     height: 650px;
-    background-color: #fffede;
+    background-color: #000000;
     display: grid;
     grid-column-gap: 25px;
     grid-row-gap: 10px;
@@ -118,11 +119,11 @@
     transform: translateZ(-2954px) translateX(-2745px) rotateY(-76deg);
   }
   #card-rodchenko > div {
-    background-color: #bd1f11;
+    background-color: #000000;
   }
   #card-rodchenko > div:nth-child(1) {
     color: #bd1f11;
-    background-color: #03090d;
+    /* background-color: #606060; */
     grid-row-end: span 5;
     text-align: right;
     padding-right: 40px;
@@ -130,12 +131,12 @@
     line-height: 710px;
   }
   #card-rodchenko > div:nth-child(4) {
-    background:#0d0e3d;
+    background:#000000;
   }
   
   img {
     display: block;
-    border: 9px solid #fffede;
+    /* border: 9px solid #fffede; */
     border-radius: 100%;
   }
   

@@ -141,9 +141,9 @@
 }
 
 #btn-hire-me:hover {
-  background: #f9e07c;
+  background: #fde895;
   /* border: 2px solid #fff700; */
-  box-shadow: 3px 3px 3px #faab19;;
+  box-shadow: 4px 3px 3px #faab19;;
   border-radius: 3px;
   color: #000000;
   transition: all 0.3s ease;
