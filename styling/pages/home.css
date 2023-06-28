@@ -1,114 +1,368 @@
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-
-/* CSS HEX */
-/* --french-rose: #F04B8Aff;
---true-blue: #3463BDff;
---french-gray: #D6D2D8ff;
---chamoisee: #A07763ff;
---ultra-violet: #6C6A93ff; */
-
-
-#html-home, #body-html, .widilo-grid-container { 
-  height: 100%; 
-  margin: 0; 
-  /* padding: 8px; */
-  /* background: white;  */
-  background-image: url('http://labs.jensimmons.com/2016/examples/images/transparentbackground.svg');
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #D6D2D8ff;
-    margin: 20px;
-    padding: 20px;
-}
-
-.widilo-grid-container * { 
- /*border: 1px solid red;*/
- position: relative; 
-}
-
-.widilo-grid-container *:after { 
- /*content:attr(class);*/
- position: absolute;
- top: 0;
- left: 0;
-}
-
-.widilo-grid-container {
+[class^="brochure"] {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 2.2fr 0.3fr;
-  grid-template-areas: "widilo-header widilo-header widilo-header widilo-header widilo-header" "widilo-sidebar widilo-content widilo-content widilo-content widilo-content" "widilo-sidebar widilo-footer widilo-footer widilo-footer widilo-footer";
+  grid-template-columns: 11.5rem 1fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    ". agency office"
+    ". dept dept"
+    "logo title title"
+    "pattern pattern pattern"
+  ;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
+  flex-shrink: 0;
+  position: relative;
+  width: 40rem;
+  min-height: 40rem * 1.5;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border: 1px solid;
+  font-size: 1rem;
+  padding: 5px;
+
+  
+  &:after {
+    content: " ";
+    display: block;
+    grid-area: pattern;
+    height: 10rem;
+    margin-top: 2rem;
+    padding-left: 50px;
+
+  }
+  
+  h1 {
+    grid-area: logo;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 3.25rem;
+    letter-spacing: -0.065em;
+    line-height: 1;
+    text-align: center; 
+    /* justify-items: center; */
+
+  }
+
+  h2 {
+    grid-area: dept;
+    margin: 0 0 0.75em;
+    border-width: 1px 0;
+    border-style: solid;
+    padding: 0.215em 0;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.015em;
+    line-height: 1.1;
+  }
+
+  h3 {
+    grid-area: title;
+    margin: 0;
+    padding-right: 1.5em;
+    font-size: 3.25rem;
+    letter-spacing: -0.0325em;
+    line-height: 1;
+    
+    span {
+      display: block;
+      margin: 0.75em 0 0;
+      padding-right: 1.5em;
+      font-size: 2.75rem;
+      font-weight: 400;
+      letter-spacing: -0.0185em;
+      line-height: 1.1;
+    }
+  }
+
+  h4 {
+    margin: 1.75em 0;
+    padding-right: 1.5em;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.015em;
+    line-height: 1.2;
+    
+    &:first-of-type { grid-area: agency; }
+    &:last-of-type  { grid-area: office; }
+  }
+
 }
 
-.widilo-header { 
-  grid-area: widilo-header; 
-  background: transparent;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "wd-brand wd-topbar wd-topbar wd-topbar wd-hamburger";
-}
-
-.pd {
-  padding:20px;
-}
-
-.wd-brand{ 
-  grid-area: wd-brand; 
-  background: #666;
-  border-radius: 5px;
-  color: #fff;
-  font-family: "ChicagoFLF", sans-serif;
-}
-
-.wd-brand:hover {
-  background: #FFD93D;
-  border: 2px solid #000000;
-  box-shadow: 2px 4px 1px #000000;
+#btn-hire-me {
+  background: #faab19;
+  border: none;
   border-radius: 3px;
-  color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  /* font-weight: bolder; */
+  font-size: 10px;
+  margin-top: 120px;
+  width: 30px;
+  position: absolut;
 }
 
-.wd-brand:active {
-  background: #dfc769;
+#btn-hire-me:hover {
+  background: #f9e07c;
+  /* border: 2px solid #fff700; */
+  box-shadow: 3px 3px 3px #faab19;;
+  border-radius: 3px;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+#btn-hire-me:active {
+  background: #ff1a1a;
   border: 2px solid #000000;
   box-shadow: 2px 1px 1px #000000;
   border-radius: 3px;
 }
 
-.wd-topbar { 
-  grid-area: wd-topbar; 
-  background:  #3463BDff;
-  text-align: center;
+// Example Styles: Colors & Patterns
+// ---------------------------------
+
+[class$="noise"] {
+  color: #faab19;
+}
+[class$="noise"] {
+  color: #faab19;
+
+  &:after {
+    background-image: radial-gradient(
+      circle at 50% 100%,
+      currentColor 0%, currentColor 18%,
+      transparent 18%, transparent 18.5%,
+      currentColor 18.5%, currentColor 31.75%,
+      transparent 31.75%, transparent 32.75%,
+      currentColor 32.75%, currentColor 42.5%,
+      transparent 42.5%, transparent 44.25%,
+      currentColor 44.25%, currentColor 51.25%,
+      transparent 51.25%, transparent 54.25%,
+      currentColor 54.25%, currentColor 59%,
+      transparent 59%, transparent 63.75%,
+      currentColor 63.75%, currentColor 66.75%,
+      transparent 66.75%, transparent 73.75%,
+      currentColor 73.75%, currentColor 75.5%,
+      transparent 75.5%, transparent 85.25%,
+      currentColor 85.25%, currentColor 86.25%,
+      transparent 86.25%, transparent 98%,
+      currentColor 98%, currentColor 98.25%,
+      transparent 98.25%, transparent 100%
+    );
+  }
 }
 
-.wd-hamburger { 
-  grid-area: wd-hamburger; 
-  background: #a61919;
-  color: #fff;
-  text-align: right;
+[class$="toxic-substances"] {
+  color: #fb4e19;
+
+  &:after {
+    background-image: repeating-linear-gradient(
+      -225deg,
+      transparent 0rem, 5rem,
+      currentColor 5rem, 5.1rem,
+      transparent 5.1rem, 5.4rem,
+      currentColor 5.4rem, 5.6rem,
+      transparent 5.6rem, 5.9rem,
+      currentColor 5.9rem, 6.3rem,
+      transparent 6.3rem, 6.5rem,
+      currentColor 6.5rem, currentColor 10rem
+    );
+  }
 }
 
-.wd-hamburger i { 
-  padding: 15px 10px 15px 25px;
+[class$="radiation"] {
+  color: #ef2e2b;
+
+  &:after {
+    background-image: radial-gradient(
+      circle at 100% 50%,
+      currentColor 0%, currentColor 18%,
+      transparent 18%, transparent 18.5%,
+      currentColor 18.5%, currentColor 31.75%,
+      transparent 31.75%, transparent 32.75%,
+      currentColor 32.75%, currentColor 42.5%,
+      transparent 42.5%, transparent 44.25%,
+      currentColor 44.25%, currentColor 51.25%,
+      transparent 51.25%, transparent 54.25%,
+      currentColor 54.25%, currentColor 59%,
+      transparent 59%, transparent 63.75%,
+      currentColor 63.75%, currentColor 66.75%,
+      transparent 66.75%, transparent 73.75%,
+      currentColor 73.75%, currentColor 75.5%,
+      transparent 75.5%, transparent 85.25%,
+      currentColor 85.25%, currentColor 86.25%,
+      transparent 86.25%, transparent 98%,
+      currentColor 98%, currentColor 98.25%,
+      transparent 98.25%, transparent 100%
+    );
+  }
 }
 
-.widilo-sidebar { 
-  grid-area: widilo-sidebar;
-  background: #6C6A93ff;
-}
-.widilo-footer { 
-  font-size: 20px;
-  grid-area: widilo-footer; 
-    background:  #A07763ff;
+[class$="technology-transfer"] {
+  color: #6b3d9c;
+
+  &:after {
+    background-image: linear-gradient(
+      to top left, transparent, currentColor
+    );
+  }
 }
 
-.widilo-content { 
-  grid-area: widilo-content; 
-    background: #F04B8Aff;
+[class$="air"] {
+  color: #0054b1;
+
+  &:after {
+    background-image: linear-gradient(
+      to bottom,
+      currentColor 0%, currentColor 23%,
+      transparent 23%, transparent 24%,
+      currentColor 24%, currentColor 37.5%,
+      transparent 37.5%, transparent 41%,
+      currentColor 41%, currentColor 50.5%,
+      transparent 50.5%, transparent 56%,
+      currentColor 56%, currentColor 62.5%,
+      transparent 62.5%, transparent 71.5%,
+      currentColor 71.5%, currentColor 76%,
+      transparent 76%, transparent 85.5%,
+      currentColor 85.5%, currentColor 89%,
+      transparent 89%, transparent 99%,
+      currentColor 99%, currentColor 100%
+    );
+  }
+}
+
+[class$="water"] {
+  color: #00808d;
+
+  &:after {
+    background-image: linear-gradient(
+      to top,
+      currentColor 0%, currentColor 23%,
+      transparent 23%, transparent 24%,
+      currentColor 24%, currentColor 37.5%,
+      transparent 37.5%, transparent 41%,
+      currentColor 41%, currentColor 50.5%,
+      transparent 50.5%, transparent 56%,
+      currentColor 56%, currentColor 62.5%,
+      transparent 62.5%, transparent 71.5%,
+      currentColor 71.5%, currentColor 76%,
+      transparent 76%, transparent 85.5%,
+      currentColor 85.5%, currentColor 89%,
+      transparent 89%, transparent 99%,
+      currentColor 99%, currentColor 100%
+    );
+  }
+}
+
+[class$="research-and-development"] {
+  color: #528b05;
+
+  &:after {
+    background-image: repeating-linear-gradient(
+      -135deg,
+      transparent 0rem, 5rem,
+      currentColor 5rem, 5.1rem,
+      transparent 5.1rem, 5.4rem,
+      currentColor 5.4rem, 5.6rem,
+      transparent 5.6rem, 5.9rem,
+      currentColor 5.9rem, 6.3rem,
+      transparent 6.3rem, 6.5rem,
+      currentColor 6.5rem, currentColor 10rem
+    );
+  }
+}
+
+[class$="pesticides"] {
+  color: #8d8115;
+
+  &:after {
+    background-image: radial-gradient(
+      circle at 0% 0%,
+      currentColor 0%, currentColor 18%,
+      transparent 18%, transparent 18.5%,
+      currentColor 18.5%, currentColor 31.75%,
+      transparent 31.75%, transparent 32.75%,
+      currentColor 32.75%, currentColor 42.5%,
+      transparent 42.5%, transparent 44.25%,
+      currentColor 44.25%, currentColor 51.25%,
+      transparent 51.25%, transparent 54.25%,
+      currentColor 54.25%, currentColor 59%,
+      transparent 59%, transparent 63.75%,
+      currentColor 63.75%, currentColor 66.75%,
+      transparent 66.75%, transparent 73.75%,
+      currentColor 73.75%, currentColor 75.5%,
+      transparent 75.5%, transparent 85.25%,
+      currentColor 85.25%, currentColor 86.25%,
+      transparent 86.25%, transparent 98%,
+      currentColor 98%, currentColor 98.25%,
+      transparent 98.25%, transparent 100%
+    );
+  }
+}
+
+[class$="solid-waste"] {
+  color: #b44515;
+
+  &:after {
+    background-image: linear-gradient(
+      to bottom right, transparent, currentColor
+    );
+  }
+}
+
+
+// Example Styles: Variations
+// --------------------------
+// Add as class to <html> in "Settings"
+
+.p-full {
+  [class^="brochure"]:after {
+    grid-row-start: 1;
+    height: 100%;
+    margin: 0;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+}
+
+
+// Foundation
+// ----------
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#html-config {
+  height: 100%;
+  font-family: Helvetica;
+  font-size: 1.9vmin;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+#body-config {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+  margin: 0;
+  padding: 3rem 0;
+  justify-items: center;
+  align-content: center;
+  
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    flex: 0 0 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
