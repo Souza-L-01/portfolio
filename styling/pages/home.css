@@ -136,9 +136,10 @@
   text-decoration: none;
   /* font-weight: bolder; */
   font-size: 10px;
-  margin-top: 120px;
+  /* margin-top: 120px; */
   width: 30px;
   position: absolut;
+  padding: 10px;
 }
 
 #btn-hire-me:hover {
