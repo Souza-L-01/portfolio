@@ -20,6 +20,43 @@
   border: 1px solid;
   font-size: 1rem;
   padding: 5px;
+  justify-items: center;
+
+  &:after {
+    content: " ";
+    display: block;
+    grid-area: pattern;
+    height: 10rem;
+    margin-top: 2rem;
+    padding-left: 50px;
+
+  }
+}
+
+[class^="brochure"] {
+  display: grid;
+  grid-template-columns: 11.5rem 1fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    ". agency office"
+    ". dept dept"
+    "logo title title"
+    "pattern pattern pattern"
+  ;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
+  flex-shrink: 0;
+  position: relative;
+  width: 40rem;
+  min-height: 40rem * 1.5;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border: 1px solid;
+  font-size: 1rem;
+  padding: 5px;
+  justify-items: center;
+
 
   
   &:after {
@@ -43,7 +80,6 @@
     letter-spacing: -0.065em;
     line-height: 1;
     text-align: center; 
-    /* justify-items: center; */
 
   }
 
@@ -129,6 +165,7 @@
 }
 [class$="noise"] {
   color: #faab19;
+
 
   &:after {
     background-image: radial-gradient(
@@ -354,8 +391,6 @@
   height: 90%;
   margin: 0;
   padding: 3rem 0;
-  justify-items: center;
-  align-content: center;
   
   &:before,
   &:after {
