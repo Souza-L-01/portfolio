@@ -191,7 +191,7 @@
   }
 }
 
-[class$="toxic-substances"] {
+[class$="stack"] {
   color: #fb4e19;
 
   &:after {
