@@ -293,7 +293,7 @@
   }
 }
 
-[class$="research-and-development"] {
+[class$="security"] {
   color: #528b05;
 
   &:after {
@@ -311,7 +311,7 @@
   }
 }
 
-[class$="pesticides"] {
+[class$="integration"] {
   color: #8d8115;
 
   &:after {
