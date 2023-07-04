@@ -1,24 +1,4 @@
-body,html {
-  margin: 0;
-  font: bold 14px/1.4 'Helvetica', arial, sans-serif;
-  background: #000;
-  position: bottom;
-  scroll-behavior: smooth;
-  /* transition: all 2s ease; */
-}
-ul { 
-  /* margin: 150px auto 0;  */
-  padding: 0; 
-  list-style: none; 
-  display: table;
-  width: 600px;
-  text-align: center;
-}
-li { 
-  display: table-cell; 
-  position: relative; 
-  padding: 15px 0;
-}
+
 .link-footer {
   color: #fff;
   /* text-transform: uppercase; */
@@ -34,7 +14,7 @@ li {
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   left: 50%;
   position: absolute;
   background: #fff;
