@@ -68,7 +68,7 @@
     left: 30px;
     opacity: 0;
     color: white;
-    font-size: 9px;
+    font-size: 0.8em;
     display: block;
     min-width: 80px;
     -webkit-transition: all 0.25s linear;
@@ -126,6 +126,7 @@
             flex-direction: column;
   }
   .contenedor form .labels label {
+    padding-right: 100%;
     min-width: 100vw;
     min-height: 100vh;
     display: -webkit-box;
@@ -157,8 +158,8 @@
   
   /* Fancy style */
   body {
-    font-family: "Quicksand", sans-serif;
-    font-size: 16px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.5em;
     font-weight: 100;
     color: white;
   }
@@ -166,11 +167,11 @@
   .content {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 110px;
+    padding-right: 10%;
   }
   .content .block {
     width: inherit;
-    font-size: 11px;
+    font-size: 0.5em;
     font-weight: 400;
     line-height: 1.5;
     margin: 42px 0;
@@ -252,7 +253,23 @@
   }
   
   img {
-    width: 48px;
-    height: 48px;
+    width: 7%;
+    height: 90%;
+    margin: -10px;
+    object-fit: cover;
   }
-  
+/*   
+  img {
+    width: 7%;
+    height: 90%;
+    margin: -10px;
+    object-fit: cover;
+  } */
+
+  .index-logo{
+    width: 9%;
+    height: 137%;
+    margin: -41px;
+    object-fit: cover;
+    border-radius: 3%;
+  }

@@ -403,6 +403,6 @@
 
 iframe[seamless] {
   border: none;
-  width: 90%;
-  height: 50%;
+  width: 50%;
+  height: 90%;
 }
