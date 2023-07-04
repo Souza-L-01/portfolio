@@ -167,7 +167,7 @@
   .content {
     width: 100%;
     box-sizing: border-box;
-    padding-right: 10%;
+    padding-right: 5%;
   }
   .content .block {
     width: inherit;
@@ -267,9 +267,10 @@
   } */
 
   .index-logo{
-    width: 9%;
-    height: 137%;
-    margin: -41px;
-    object-fit: cover;
-    border-radius: 3%;
+    width: 147px;
+    /* height: 133px; */
+    margin: -67px;
+    /* padding-bottom: 13%; */
+    /* object-fit: none; */
+    border-radius: 83%;
   }
