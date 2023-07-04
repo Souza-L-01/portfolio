@@ -1,217 +1,160 @@
 <!DOCTYPE html>
 <html lang="en" id="html-config">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="assets/styling/app.css">
-  </head>
-  <body id="body-config">
-    <div class="contenedor">
-      <form>
-        <input type="radio" id="Slide1" name="slider" titulo="Home" autofocus="autofocus" checked="checked"/>
-        <input type="radio" id="Slide2" name="slider" titulo="About"/>
-        <input type="radio" id="Slide3" name="slider" titulo="Languages/Frameworks"/>
-        <input type="radio" id="Slide4" name="slider" titulo="Projects"/>
-        <input type="radio" id="Slide5" name="slider" titulo="Social Media"/>
-        <input type="radio" id="Slide6" name="slider" titulo="Contact"/>
-        <div class="labels">
-          <label for="Slide1" id="Slide1" class="Slide">
-            <div class="content">
-              <img scr="NaDe-01.jpg">
-              <h1>Hello World!</h1>
-              <h2>I'm Nathaniel Davydov</h2>
-              <h3>I am a Web Designer/Developer!</h3>
-            </div>
-          </label>
-          <label for="Slide2" id="Slide2" class="Slide">
-            <div class="content">
-              <h1>About</h1>
-              <div class="block"><span> <i class="fa fa-hashtag"></i><br/><strong>No JS</strong><br/>CSS Rules!</span><span> <i class="fa fa-keyboard-o"></i><br/><strong>Keyboard navigation</strong><br/>Yep, no kidding</span><span><i class="fa fa-bars"></i><br/><strong>Lateral menu</strong></span><span><i class="fa fa-codepen"></i><br/><strong>Autogenerate pages</strong><br/>Using Jade & SASS</span></div>
-            </div>
-          </label>
-          <label for="Slide3" id="Slide3" class="Slide">
-            <div class="content">
-              <h1>Languages/Frameworks</h1>
-              <div class="block">
-                <ol>
-                  <li>Add the pages title in the pageTitle array in the HTML editor to generate pages</li>
-                  <li>Add the number of pages in the $npages variable in the CSS editor</li>
-                </ol>
-              </div>
-            </div>
-          </label>
-          <label for="Slide4" id="Slide4" class="Slide">
-            <div class="content">
-              <h1>Projects</h1>
-              <div class="block"><span><a href="https://codepen.io/hrtzt/pen/NPZKRN" target="_blank">JavaScript</a></span><span><a href="https://codepen.io/hrtzt/pen/YPoeWd" target="_blank">HTML/CSS</a></span><span><a href="https://codepen.io/hrtzt/pen/JdYaEZ" target="_blank">Graphic Design/Branding</a></span><span><a href="https://codepen.io/hrtzt/pen/NPZEPj" target="_blank">CSS Animation and user interaction</a></span></div>
-            </div>
-          </label>
-          <label for="Slide5" id="Slide5" class="Slide">
-            <div class="content">
-              <h1>Social Media</h1>
-              <img src="instagram.png"><img src="github-logo.png"><img src="3d-outlined-shape.png">
-            </div>
-          </label>
-          <label for="Slide6" id="Slide6">
-            <div class="content">
-              <h1>Contact</h1>
-            </div>
-              <div id="footer-config">
-                <div id="footer-body">
-                  <!-- ---------- herere -->
-                  <article class="brochure-presentation" style="height: 62%;">
-                    <h1 style="font-size:270%; margin-top: 5%;"><span>Lucas <br>Vilela<br>Souza</span></h1>
-                    <h2>Full Stack <br> Web Dev</h2>
-                    <h3>Portfolio under construction <br> <br> I hope you like it</h3>
-                    <h4></h4>
-                    <a id="btn-hire-me" href="#scroll" style="text-decoration: none;">Check</a>
-                  </article>
-                  
-                
-                  <!-- Stack
-                  ---- --------------->
-                  
-                  <article class="brochure-stack" style="height: 62%;">
-                    <h1 style="font-size:300%; margin:inherit;">Stack</h1>
-                    <h2>Programming  <br> Skills</h2>
-                    <h3><span>HTMLS | CSS <br> JavaScript <br> Ruby | Rails <br> Python <br> SQL <br> Webpack <br> Stimulus <br> Figma | Canva <br> Adobe Suite</span> </h3>
-                    <!-- <h4></h4>
-                    <h4></h4> -->
-                  </article>
-                  
-                  
-                  <!-- Database
-                  ---- -------->
-                  
-                  <article class="brochure-database" style="height: 62%;">
-                    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
-                    <h2>Database <br> Management</h2>
-                    <h3>Knowledge of database systems and experience in working with relational databases like MySQL or PostgreSQL.</h3>
-                    <!-- <h4></h4>
-                    <h4></h4> -->
-                  </article>
-                  
-                  
-                  <!-- server
-                  ---- ------------------>
-                  
-                  <article class="brochure-server" style="height: 62%;">
-                    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
-                    <h2>Server-Side <br> Development</h2>
-                    <h3>Expertise in server-side frameworks and technologies like Django, Ruby on Rails, Spring, or Express.js.</h3>
-                    <h4></h4>
-                  </article>
-                  
-                  
-                  <!-- API
-                  ---- -->
-                  
-                  <article class="brochure-api" style="height: 62%;">
-                    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
-                    <h2>API <br> Development</h2>
-                    <h3>Understanding of RESTful API design principles and experience in developing APIs for web applications.</h3>
-                    <h4></h4>
-                    <h4></h4>
-                  </article>
-                  
-                  
-                  <!-- Git
-                  ---- ---->
-                  
-                  <article class="brochure-git" style="height: 62%;">
-                    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
-                    <h2>Version <br> Control</h2>
-                    <h3>Proficiency in using version control systems like Git to manage codebase and collaborate with other developers.</h3>
-                    <h4></h4>
-                    <h4></h4>
-                  </article>
-                  
-                  
-                  <!-- Security
-                  ---- ----------------------->
-                  
-                  <article class="brochure-security" style="height: 62%;">
-                    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
-                    <h2>Security <br> Awareness</h2>
-                    <h3>Familiarity with web security best practices, authentication, and authorization mechanisms to ensure data protection.</span></h3>
-                    <h4></h4>
-                    <h4></h4>
-                  </article>
-                  
-                  
-                  <!-- Integration
-                  ---- --------->
-                  
-                  <article class="brochure-integration" style="height: 62%;">
-                    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
-                    <h2>Continuous <br> Integration <br> Deployment <br>(CI/CD)</h2>
-                    <h3>Understanding of CI/CD pipelines and experience in automating the deployment process for web applications.</h3>
-                    <h4></h4>
-                    <h4></h4>
-                  </article>
-                  
-                  
-                  <!-- Emoji
-                  ---- ---------->
-                  
-                  <article class="brochure-emoji" style="height: 62%;">
-                    <h1><span></span></h1>
-                    <a style="font-size: 50px;">👨🏻‍💻</a>
-                    <h2><span></span></h2>
-                    <h4></h4>
-                    <h4></h4>
-                  </article>
-                
-                  
-                  <div id="scroll">
-                    <footer>
-                      <ul>
-                        <body id="body-rodchenko">
-                          <p>What's this?</p>
-                          <div class="background-rodchenko">
-                            <div>
-                              <div id="leftcol-rodchenko">
-                                <div></div>
-                                <div><img src="https://assets.codepen.io/881020/girl.png" /></div>
-                                <div></div>
-                              </div>
-                            </div>
-                            <div></div>
-                            <div>&nbsp;</div>
-                            <div><div class="container-rodchenko">
-                          <div id="card-rodchenko">
-                            <div>HIRE ME</div>
-                            <div>&nbsp;</div>
-                            <div>&nbsp;</div>
-                            <div>&nbsp;</div>
-                            <div>&nbsp;</div>
-                            <div>&nbsp;</div>
-                          </div>
-                        </div>
-                        </div>
-                            <div>
-                              <li><a href="https://github.com/Souza-L-01" class="link-footer">GitHub</a></li>
-                              <li><a href="https://www.linkedin.com/in/lucas-vilela-souza/" class="link-footer">LinkedIn</a></li>
-                              <li><a href="https://medium.com/@souza.vilela.lucas" class="link-footer">Blog</a></li>
-                              <li><a href="mailto:souza.vilela.lucas@gmail.com" target="_blank" class="link-footer">Contact</a></li> <br><br>
-                              <li style="font-size: 60%;" ><a href="#" class="link-footer"> <- Back </a></li> <br>
-                              <li><a href="projects/rodchenko.html" onClick="return popup(this, 'hire-me')" class="link-footer">What's this?</a></li>
-                            </div>
-                            <div>&nbsp;</div>
-                            <div></div>
-                        </div>
-                      </ul>
-                    </footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styling/app.css">
+</head>
+<body id="body-config">
 
-                </div>
+    <article class="brochure-presentation" style="height: 62%;">
+      <h1 style="font-size:270%; margin-top: 5%;"><span>Lucas <br>Vilela<br>Souza</span></h1>
+      <h2>Full Stack <br> Web Dev</h2>
+      <h3>Portfolio under construction <br> <br> I hope you like it</h3>
+      <h4></h4>
+      <a id="btn-hire-me" href="#scroll" style="text-decoration: none;">Check</a>
+    </article>
+  
+
+  <!-- Stack
+  ---- --------------->
+  
+  <article class="brochure-stack" style="height: 62%;">
+    <h1 style="font-size:300%; margin:inherit;">Stack</h1>
+    <h2>Programming  <br> Skills</h2>
+    <h3><span>HTMLS | CSS <br> JavaScript <br> Ruby | Rails <br> Python <br> SQL <br> Webpack <br> Stimulus <br> Figma | Canva <br> Adobe Suite</span> </h3>
+    <!-- <h4></h4>
+    <h4></h4> -->
+  </article>
+  
+  
+  <!-- Database
+  ---- -------->
+  
+  <article class="brochure-database" style="height: 62%;">
+    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
+    <h2>Database <br> Management</h2>
+    <h3>Knowledge of database systems and experience in working with relational databases like MySQL or PostgreSQL.</h3>
+    <!-- <h4></h4>
+    <h4></h4> -->
+  </article>
+  
+  
+  <!-- server
+  ---- ------------------>
+  
+  <article class="brochure-server" style="height: 62%;">
+    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
+    <h2>Server-Side <br> Development</h2>
+    <h3>Expertise in server-side frameworks and technologies like Django, Ruby on Rails, Spring, or Express.js.</h3>
+    <h4></h4>
+  </article>
+  
+  
+  <!-- API
+  ---- -->
+  
+  <article class="brochure-api" style="height: 62%;">
+    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
+    <h2>API <br> Development</h2>
+    <h3>Understanding of RESTful API design principles and experience in developing APIs for web applications.</h3>
+    <h4></h4>
+    <h4></h4>
+  </article>
+  
+  
+  <!-- Git
+  ---- ---->
+  
+  <article class="brochure-git" style="height: 62%;">
+    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
+    <h2>Version <br> Control</h2>
+    <h3>Proficiency in using version control systems like Git to manage codebase and collaborate with other developers.</h3>
+    <h4></h4>
+    <h4></h4>
+  </article>
+  
+  
+  <!-- Security
+  ---- ----------------------->
+  
+  <article class="brochure-security" style="height: 62%;">
+    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
+    <h2>Security <br> Awareness</h2>
+    <h3>Familiarity with web security best practices, authentication, and authorization mechanisms to ensure data protection.</span></h3>
+    <h4></h4>
+    <h4></h4>
+  </article>
+  
+  
+  <!-- Integration
+  ---- --------->
+  
+  <article class="brochure-integration" style="height: 62%;">
+    <h1 style="font-size:300%; padding-left: 20%; margin:inherit;">Towards</h1>
+    <h2>Continuous <br> Integration <br> Deployment <br>(CI/CD)</h2>
+    <h3>Understanding of CI/CD pipelines and experience in automating the deployment process for web applications.</h3>
+    <h4></h4>
+    <h4></h4>
+  </article>
+  
+  
+  <!-- Emoji
+  ---- ---------->
+  
+  <article class="brochure-emoji" style="height: 62%;">
+    <h1><span></span></h1>
+    <a style="font-size: 50px;">👨🏻‍💻</a>
+    <h2><span></span></h2>
+    <h4></h4>
+    <h4></h4>
+  </article>
+
+  
+  <div id="scroll">
+    <footer>
+      <ul>
+        <body id="body-rodchenko">
+          <p>What's this?</p>
+          <div class="background-rodchenko">
+            <div>
+              <div id="leftcol-rodchenko">
+                <div></div>
+                <div><img src="https://assets.codepen.io/881020/girl.png" /></div>
+                <div></div>
               </div>
-          </label>
+            </div>
+            <div></div>
+            <div>&nbsp;</div>
+            <div><div class="container-rodchenko">
+          <div id="card-rodchenko">
+            <div>HIRE ME</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+          </div>
         </div>
-      </form>
-    </div>
-  </body>
+        </div>
+            <div>
+              <li><a href="https://github.com/Souza-L-01" class="link-footer">GitHub</a></li>
+              <li><a href="https://medium.com/@souza.vilela.lucas" class="link-footer">Blog</a></li>
+              <li><a href="souza.vilela.lucas@gmail.com" class="link-footer">Contact</a></li>
+              <li><a href="https://www.linkedin.com/in/lucas-vilela-souza/" class="link-footer">LinkedIn</a></li> <br><br>
+              <li style="font-size: 60%;" ><a href="#" class="link-footer"> <- Back </a></li> <br>
+              <li><a href="projects/rodchenko.html" onClick="return popup(this, 'hire-me')" class="link-footer">What's this?</a></li>
+            </div>
+            <div>&nbsp;</div>
+            <div></div>
+        </div>
+      </ul>
+    </footer>
+  </div>
+</body>
 </html>
+
 <SCRIPT TYPE="text/javascript">
   function popup(mylink, windowname) { 
     if (! window.focus)return true;

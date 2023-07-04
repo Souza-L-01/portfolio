@@ -374,7 +374,7 @@
   box-sizing: inherit;
 }
 
-#footer-config {
+#html-config {
   height: 100%;
   font-family: Helvetica;
   font-size: 1.9vmin;
@@ -382,7 +382,7 @@
   box-sizing: border-box;
 }
 
-#footer-body {
+#body-config {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
