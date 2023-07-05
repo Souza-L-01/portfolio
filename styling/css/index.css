@@ -7,7 +7,7 @@
   .contenedor {
     width: 100vw;
     height: 100vh;
-    background: deeppink;
+    background: deeppink !important;
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -256,7 +256,7 @@
     width: 7%;
     height: 90%;
     margin: -10px;
-    object-fit: cover !important;
+    object-fit: cover ;
   }
 /*   
   img {
