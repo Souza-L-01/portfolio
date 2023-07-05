@@ -1,12 +1,123 @@
-.Prose {
-    display: grid;
-    grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 40em) [main-end] minmax(1em, 1fr) [full-end];
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+.teaserboxes,
+.col,
+.box-caption {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.teaserboxes {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem;
+  flex-direction: row;
+}
+.col {
+  width: 25%;
+  flex-basis: 25%;
+  flex-direction: column;
+}
+.box {
+  position: relative;
+  width: 100%;
+  background: #353842;
+  overflow: hidden;
+  cursor: pointer;
+}
+.box > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.box-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  background: none;
+  text-align: right;
+  color: white;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(2);
+  transition: all 0.5s;
+}
+.box-caption h3 {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.box-caption h3:after {
+  content:'';
+  position:absolute;
+  right: 0;
+  bottom: -0.5rem;
+  width: 0;
+  height: 2px;
+  background: #E95D1F;
+  transition: width 0.1s 0.8s;
+}
+.touched > .box-caption,
+.hovered > .box-caption{
+  opacity: 1;
+  transform: scale(1);
+}
+.touched > .box-caption h3:after,
+.hovered > .box-caption h3:after {
+  width: 2rem;
+}
+.touched > img,
+.hovered > img { opacity:0; }
+#body {
+  background: #353842;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+}
+#html, #body {
+  width: 100%;
+  height: 100%;
+}
+/**/@media screen and (max-width: 60.000em) {
+  .col {
+    width: 33.333%;
+    flex-basis: 33.333%;
+    justify-content: flex-end;
   }
-  
-  .Prose > * {
-    grid-column: main;
+  .col:last-child {
+    justify-content: flex-start;
   }
-  
-  .Prose-splash {
-    grid-column: full;
+}
+@media screen and (max-width: 40.000em) {
+  .col {
+    width: 50%;
+    flex-basis: 50%;
   }
+  .col:nth-child(-n+2) {
+    justify-content: flex-end;
+  }
+  .col:nth-child(n+2) {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 30.000em) {
+  .col {
+    width: 100%;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+}
+/*
+ FlexFun
+ Hornebom / 2014-02-06
+ HTML and CSS MIT licensed
+ http://hornebom.com/
+*/
