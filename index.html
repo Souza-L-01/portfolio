@@ -4,68 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv='cache-control' content='no-cache'> 	
+	<meta http-equiv='expires' content='0'> 
+	<meta http-equiv='pragma' content='no-cache'>
+
+  <!-- JS -->
+  <script src="https://kit.fontawesome.com/b5d54b73c2.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/js/home.js"></script>
+	
+  <!-- FontsS Style-->
   <link rel="stylesheet" type="text/css" href="styling/style.css">
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <title>Portfolio</title>
+
+  <title>👨🏻‍💻 Portfolio</title>
 </head>
+
 <body>
+
   <div class="contenedor">
-  <form>
-    <input type="radio" id="Slide1" name="slider" titulo="Home" autofocus="autofocus" checked="checked"/>
-    <input type="radio" id="Slide2" name="slider" titulo="About"/>
-    <input type="radio" id="Slide3" name="slider" titulo="Languages/Frameworks"/>
-    <input type="radio" id="Slide4" name="slider" titulo="Projects"/>
-    <input type="radio" id="Slide5" name="slider" titulo="Social Media"/>
-    <input type="radio" id="Slide6" name="slider" titulo="Contact"/>
-    <div class="labels">
-      <label for="Slide1" id="Slide1" class="Slide">
-        <div class="content">
-          <img src="logo/lucas_web_dev.gif" alt="portfolio_logo">
-          <h1>Hello World!</h1>
-          <h2>I'm Lucas Vilela Souza</h2>
-          <h3>I am a Web Designer/Developer!</h3>
-            <h4>Portfolio under construction | It should't take long</h4>
-        </div>
-      </label>
-      <label for="Slide2" id="Slide2" class="Slide">
-        <div class="content">
-          <h1>About</h1>
-          <div class="block"><span> <i class="fa fa-hashtag"></i><br/><strong>No JS</strong><br/>CSS Rules!</span><span> <i class="fa fa-keyboard-o"></i><br/><strong>Keyboard navigation</strong><br/>Yep, no kidding</span><span><i class="fa fa-bars"></i><br/><strong>Lateral menu</strong></span><span><i class="fa fa-codepen"></i><br/><strong>Autogenerate pages</strong><br/>Using Jade & SASS</span></div>
-        </div>
-      </label>
-      <label for="Slide3" id="Slide3" class="Slide">
-        <div class="content">
-          <h1>Languages/Frameworks</h1>
-          <div class="block">
-            <ol>
-              <li>Add the pages title in the pageTitle array in the HTML editor to generate pages</li>
-              <li>Add the number of pages in the $npages variable in the CSS editor</li>
-            </ol>
-          </div>
-        </div>
-      </label>
-      <label for="Slide4" id="Slide4" class="Slide">
-        <div class="content">
-          <h1>Projects</h1>
-          <div class="block"><span><a href="https://codepen.io/hrtzt/pen/NPZKRN" target="_blank">JavaScript</a></span><span><a href="https://codepen.io/hrtzt/pen/YPoeWd" target="_blank">HTML/CSS</a></span><span><a href="https://codepen.io/hrtzt/pen/JdYaEZ" target="_blank">Graphic Design/Branding</a></span><span><a href="https://codepen.io/hrtzt/pen/NPZEPj" target="_blank">CSS Animation and user interaction</a></span></div>
-        </div>
-      </label>
-      <label for="Slide5" id="Slide5" class="Slide">
-        <div class="content">
-          <h1>Social Media</h1>
-          <img src="instagram.png"><img src="github-logo.png"><img src="3d-outlined-shape.png">
-        </div>
-      </label>
-      <label for="Slide6" id="Slide6">
-        <div class="content">
-          <h1>Contact</h1>
-          <div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis</div>
-        </div>
-      </label>
-      
-  </form>
-</div>
-  
+		<form>
+			<input type="radio" id="Slide1" name="slider" titulo="Home" autofocus="autofocus" checked="checked"/>
+			<input type="radio" id="Slide2" name="slider" titulo="About"/>
+			<input type="radio" id="Slide3" name="slider" titulo="Stack"/>
+			<input type="radio" id="Slide4" name="slider" titulo="Projects"/>
+			<input type="radio" id="Slide5" name="slider" titulo="Social Media"/>
+			<input type="radio" id="Slide6" name="slider" titulo="Contact"/>
+			<div class="labels">
+				<label for="Slide1" id="Slide1" class="Slide">
+					<div class="content">
+						<img class="index-logo" src="logo/lucas_web_dev.gif" alt="ortfolio_logo">
+						<h1>Hello World!</h1>
+						<br>
+						<a href=" "><h2>Here is Lucas Vilela Souza</h2>
+						<h3> Web & Software Developer</h3>
+						<h6>Portfolio under construction</h4></a>
+					</div>
+				</label>
+				<label for="Slide2" id="Slide2" class="Slide">
+					<div class="content">
+						<h1>About</h1>
+						<div class="block">
+							<span>XXXXXXXXXXXX</span>
+							<span>XXXXXXXXXXXX</span>
+							<span>XXXXXXXXXXXX</span>
+							<span>XXXXXXXXXXXX</span>
+							<span>XXXXXXXXXXXX</span>
+							<span>XXXXXXXXXXXX</span>
+							<span>XXXXXXXXXXXX</span>
+						</div>
+					</div>
+				</label>
+				<label for="Slide3" id="Slide3" class="Slide">
+					<div class="content">
+						<h1>Languages <br> Frameworks</h1>
+						<div w3-include-html="/htmlpages/home.html"></div>
+						<iframe src="/htmlpages/home.html" seamless></iframe>
+						<div class="block">
+							<ol>
+							</ol>
+							
+						</div>
+					</div>
+				</label>
+				<label for="Slide4" id="Slide4" class="Slide">
+					<div class="content">
+						<h1>Projects</h1>
+						<div class="block">
+							<span><a href="https://codepen.io/hrtzt/pen/NPZKRN" target="_blank">JavaScript</a></span>
+							<span><a href="https://codepen.io/hrtzt/pen/YPoeWd" target="_blank">HTML/CSS</a></span>
+							<span><a href="https://codepen.io/hrtzt/pen/JdYaEZ" target="_blank">Graphic Design/Branding</a></span>
+							<span><a href="https://codepen.io/hrtzt/pen/NPZEPj" target="_blank">CSS Animation and user interaction</a></span>
+						</div>
+					</div>
+				</label>
+				<label for="Slide5" id="Slide5" class="Slide">
+					<div class="content">
+						<h1>Social Media</h1>
+						<img src="instagram.png"><img src="github-logo.png"><img src="3d-outlined-shape.png">
+					</div>
+				</label>
+				<label for="Slide6" id="Slide6">
+					<div class="content">
+						<h1>Contact</h1>
+						<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis</div>
+						<footer>
+							<ul>
+							  </div class="block">
+								  <div>
+									<a href="https://github.com/Souza-L-01" class="link-footer"><i class="fa-brands fa-github"></i>GitHub</a>
+									<a href="https://www.linkedin.com/in/lucas-vilela-souza/" class="link-footer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+									<a href="https://medium.com/@souza.vilela.lucas" class="link-footer"><i class="fa-brands fa-medium"></i>Medium</a><br>
+									<a href="https://codepen.io/Lucas-Vilela-Souza" class="link-footer"><i class="fa-brands fa-codepen"></i>CodePen</a>
+									<a href="mailto:souza.vilela.lucas@gmail.com" class="link-footer"><i class="fa-solid fa-envelope"></i>E-mail</a>
+									<br><br><span><a href="/html_pages/rodchenko.html" onClick="return popup(this, 'hire-me')" class="link-footer">What's this?</a></span>
+								  </div>
+							  </div>
+							</ul>
+						  </footer>
+					</div>
+				</label>
+			</div>
+		</form>
+	</div>
+	
 </body>
+
 </html>
