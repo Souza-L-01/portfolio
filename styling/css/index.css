@@ -256,7 +256,7 @@
     width: 7%;
     height: 90%;
     margin: -10px;
-    object-fit: cover;
+    object-fit: cover !important;
   }
 /*   
   img {
