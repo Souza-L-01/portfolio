@@ -404,7 +404,9 @@
 
 iframe[seamless] {
   border: none;
-  width: 500%;
+  width: 100%;
   height: 90%;
   margin-left: 10%;
+  scroll-behavior: smooth;
+
 }
