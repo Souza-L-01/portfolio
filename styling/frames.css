@@ -1,9 +1,11 @@
 iframe[seamless] {
     border: none;
-    width: 85%;
+    width: 95%;
     height: 350px;
-    margin-left: 10%;
+    padding-left: 90px;
+    /* margin-left: 10%; */
     scroll-behavior: smooth;
+    zoom: 1; -moz-transform: scale(1); -moz-transform-origin: 0 0;
   }
 
   #scroll{
