@@ -149,10 +149,10 @@
   background-image: radial-gradient(circle at 50% 100%, currentColor 0%, currentColor 18%, transparent 18%, transparent 18.5%, currentColor 18.5%, currentColor 31.75%, transparent 31.75%, transparent 32.75%, currentColor 32.75%, currentColor 42.5%, transparent 42.5%, transparent 44.25%, currentColor 44.25%, currentColor 51.25%, transparent 51.25%, transparent 54.25%, currentColor 54.25%, currentColor 59%, transparent 59%, transparent 63.75%, currentColor 63.75%, currentColor 66.75%, transparent 66.75%, transparent 73.75%, currentColor 73.75%, currentColor 75.5%, transparent 75.5%, transparent 85.25%, currentColor 85.25%, currentColor 86.25%, transparent 86.25%, transparent 98%, currentColor 98%, currentColor 98.25%, transparent 98.25%, transparent 100%);
 }
 
-[class$=stack] {
+#brochure-stack1 {
   color: #fb4e19;
 }
-[class$=stack]:after {
+#brochure-stack1:after {
   background-image: repeating-linear-gradient(-225deg, transparent 0rem, 5rem, currentColor 5rem, 5.1rem, transparent 5.1rem, 5.4rem, currentColor 5.4rem, 5.6rem, transparent 5.6rem, 5.9rem, currentColor 5.9rem, 6.3rem, transparent 6.3rem, 6.5rem, currentColor 6.5rem, currentColor 10rem);
 }
 
@@ -213,11 +213,7 @@
   pointer-events: none;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: initial ;
-}
+
 
 #html-config {
   height: 100%;
