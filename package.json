@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build-css": "node-sass styling/home.scss -o styling/home.css/",
+    "watch-css": "node-sass styling/home.scss -o styling/home.css --watch --recursive"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
