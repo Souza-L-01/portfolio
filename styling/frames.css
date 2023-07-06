@@ -1,0 +1,15 @@
+iframe[seamless] {
+    border: none;
+    width: 85%;
+    height: 350px;
+    margin-left: 10%;
+    scroll-behavior: smooth;
+  }
+
+  #scroll{
+    margin-left: 30%;
+    padding-right: 25%;
+    /* padding-bottom: 10%; */
+    transition: all 2s ease;
+    scroll-behavior: smooth;
+  }

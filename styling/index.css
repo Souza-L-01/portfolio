@@ -1,8 +1,7 @@
 /* The basic stuff to make it work */
 * {
-  padding: 0;
+  padding: 0px;
   margin: 0;
- 
 }
 .contenedor {
   width: 100vw;
