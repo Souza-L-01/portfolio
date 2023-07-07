@@ -257,3 +257,31 @@ img {
   border-radius: 83%;
 }
 
+.img-what{
+  width: 30%;
+  height: 30%;
+  margin: -10px;
+  object-fit: cover ;
+ 
+}
+
+.img-what2{
+  justify-self: start;
+  align-items: right;
+  margin-left: auto; 
+  margin-right: 10%;
+  width: 10%;
+  height: 10%;
+
+}
+
+.link-what{
+  color: #717171;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  font-size: 10px;
+  align-items: right;
+}
