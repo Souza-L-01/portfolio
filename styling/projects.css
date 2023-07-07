@@ -37,7 +37,7 @@
   position: absolute;
   top: 0;
   height: 110%;
-  width: 100%;
+  width: 110%;
   z-index: -1;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -49,4 +49,30 @@
 
 .card:hover img {
   transform: translateY(-10px);
+}
+
+.project-link {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.project-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 10px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.project-link:hover:after { 
+  width: 100%; 
+  left: 0
 }

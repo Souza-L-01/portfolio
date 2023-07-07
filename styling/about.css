@@ -245,3 +245,10 @@
     display: none;
   }
 }
+
+.img-bonsai {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 30%;
+  height: 50px;
+}

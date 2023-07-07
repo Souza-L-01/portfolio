@@ -241,13 +241,13 @@ ol {
   list-style-type: decimal;
 }
 
-a {
+.contact-link {
   text-decoration: none;
   color: #717171;
   -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-a:hover {
+.contact-link:hover {
   color: rgb(126, 64, 188);
 }
 

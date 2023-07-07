@@ -21,17 +21,17 @@ ul {
   }
 }
 
-a {
+/* a {
   color: white;
   text-decoration: none;
   box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
   letter-spacing: 0.15em;
   font-size: 0.8em;
-}
+} */
 
-a:hover {
+/* a:hover {
   box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
-}
+} */
 
 li:last-child {
   grid-column: 1 / 2;
