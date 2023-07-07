@@ -285,3 +285,9 @@ img {
   font-size: 10px;
   align-items: right;
 }
+
+#container-codepen{
+  width: 90%;
+  height: 100%;
+  padding-left: 9%;
+}
