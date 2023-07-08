@@ -5,3 +5,23 @@
 @import "projects.css";
 @import url('https://db.onlinewebfonts.com/c/1a243397695904f6f56e490ffd77a9cb?family=ChicagoFLF');
   /* apply reponsivity css */
+
+  @media (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for screens up to 480px wide */
+    .item {
+      flex-basis: 100%; /* Make the items occupy full width */
+    }
+  }
+  @media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+  }
+    
