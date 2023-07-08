@@ -291,3 +291,15 @@ img {
   height: 100%;
   padding-left: 9%;
 }
+
+.name-hover1:hover{
+  color: rgb(226, 39, 101);
+}
+
+.name-hover2:hover{
+  color: rgb(168, 218, 77);
+}
+
+.name-hover3:hover{
+  color: rgb(247, 228, 148);
+}
