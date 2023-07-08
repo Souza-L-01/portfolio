@@ -62,7 +62,7 @@
 }
 [class^=brochure] h3 span {
   display: block;
-  margin: 0.75em 0 0;
+  margin: 0.75em -30% 0;
   padding-right: 1.5em;
   font-size: 2.75rem;
   font-weight: 400;
