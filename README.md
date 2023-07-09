@@ -40,6 +40,6 @@ To run this project locally, follow these steps:
 If you have any questions or would like to get in touch, feel free to reach out to me:
 
 - Email: souza.vilela.lucas@gmail.com
-- <a/ href="https://www.linkedin.com/in/lucas-vilela-souza/"> LinkedIn <a>
+- <a href="https://www.linkedin.com/in/lucas-vilela-souza/"> LinkedIn </a>
 
 Thank you for visiting my portfolio!
